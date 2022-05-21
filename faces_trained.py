@@ -86,23 +86,6 @@ def main():
 	
 	print(" Спасибо за использование!")
 
-
-
-
-	'''
-
-	This "detectMultiScale" function detects the actual face and is the key part of our code, so let’s go over the options:
-
-	1. The detectMultiScale function is a general function that detects objects. Since we are calling it on the face cascade, that’s what it detects.
-
-	2. The first option is the grayscale image.
-
-	3. The second is the scaleFactor. Since some faces may be closer to the camera, they would appear bigger than the faces in the back. The scale factor compensates for this.
-
-	4. The detection algorithm uses a moving window to detect objects. minNeighbors defines how many objects are detected near the current one before it declares the face found. minSize, meanwhile, gives the size of each window.
-
-	'''
-
 try:
 	main()
 except KeyboardInterrupt:
